@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "hekolcu",
+  "name": "Huseyin Emre Kolcu",
+  "description": "hekolcu personal website with portfolio and dev tools",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +22,35 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "shortcuts": [
+    {
+      "name": "Huseyin Emre Kolcu",
+      "short_name": "Huseyin Kolcu",
+      "description": "Huseyin Emre Kolcu",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/logo1024.png",
+          "sizes": "1024x1024"
+        },
+        {
+          "src": "/512.png",
+          "sizes": "512x512"
+        },
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "form_factor": "narrow"
+    }
+  ]
 }
