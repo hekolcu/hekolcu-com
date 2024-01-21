@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import '/node_modules/primeflex/primeflex.css';
+import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
+import 'primeicons/primeicons.css';
 import reportWebVitals from './reportWebVitals';
 import App from "./App";
+import {APIOptions, PrimeReactProvider} from "primereact/api";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 
+const primeReactValue: Partial<APIOptions> = {
+    ripple: true,
+    hideOverlaysOnDocumentScrolling: false,
+    zIndex: {
+        modal: 1100,
+        overlay: 1000,
+        menu: 1000,
+        tooltip: 1100,
+        toast: 1200
+    },
+    autoZIndex: true,
+    locale: 'en',
+};
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <PrimeReactProvider value={primeReactValue}>
+            <App/>
+        </PrimeReactProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

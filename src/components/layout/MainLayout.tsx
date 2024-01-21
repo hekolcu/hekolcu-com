@@ -1,25 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { TopBar, BottomBar } from "../common";
 
 const MainLayout: React.FC<{children: React.ReactNode}> = ({ children }) => {
     return (
-        <div>
+        <div className="flex flex-column" style={{minHeight: '100vh'}}>
             <header>
-                {/* Header content like logo, navigation links, etc. */}
-                <nav>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        {/* Add more navigation links as needed */}
-                    </ul>
-                </nav>
+                <TopBar/>
             </header>
-            <main>
-                {children} {/* This renders the component passed into the layout */}
+            <main className="flex-grow-1">
+                {children}
             </main>
             <footer>
-                {/* Footer content */}
-                <p>© 2024 My Website</p>
+                <BottomBar/>
             </footer>
         </div>
     );
