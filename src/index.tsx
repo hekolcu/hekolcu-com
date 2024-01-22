@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import '/node_modules/primeflex/primeflex.css';
-import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
 import 'primeicons/primeicons.css';
 import reportWebVitals from './reportWebVitals';
 import App from "./App";

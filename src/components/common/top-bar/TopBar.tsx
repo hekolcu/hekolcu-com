@@ -1,9 +1,9 @@
 import React from 'react';
 import { Menubar } from 'primereact/menubar';
-import { InputText } from 'primereact/inputtext';
 import { MenuItem } from "primereact/menuitem";
 
 const TopBar = () => {
+
     const items: MenuItem[] = [
         {
             label: 'Home',
@@ -23,13 +23,23 @@ const TopBar = () => {
 
     const end = (
         <div className="flex align-items-center gap-2">
-            <InputText placeholder="Search" type="text" className="w-8rem sm:w-auto" />
+            {/*<MultiStateCheckbox*/}
+            {/*    value={isDarkTheme}*/}
+            {/*    onChange={(e) => handleChangeTheme(e.value)}*/}
+            {/*    options={[*/}
+            {/*        { icon: 'pi pi-sun', isDarkTheme: false },*/}
+            {/*        { icon: 'pi pi-moon', isDarkTheme: true }*/}
+            {/*    ]}*/}
+            {/*    optionValue="isDarkTheme"*/}
+            {/*    empty={false}*/}
+            {/*/>*/}
         </div>
     );
 
     return (
         <div className="card">
             <Menubar model={items} start={start} end={end} />
+            {/*<Toast ref={toast} position="bottom-right" />*/}
         </div>
     )
 }
