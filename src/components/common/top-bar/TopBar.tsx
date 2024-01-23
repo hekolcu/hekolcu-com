@@ -7,15 +7,18 @@ const TopBar = () => {
     const items: MenuItem[] = [
         {
             label: 'Home',
-            icon: 'pi pi-home'
+            icon: 'pi pi-home',
+            url: '/'
         },
         {
             label: 'Features',
-            icon: 'pi pi-star'
+            icon: 'pi pi-star',
+            url: '/features'
         },
         {
             label: 'Contact',
-            icon: 'pi pi-envelope'
+            icon: 'pi pi-envelope',
+            url: '/contact'
         }
     ];
 
